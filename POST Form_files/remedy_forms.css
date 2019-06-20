@@ -5,6 +5,14 @@
 
 body {margin:0px; font-size:8pt;}
 
+html { 
+	background: url(Access%20Solutions%20Banner.PNG) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 div#wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -176,9 +184,9 @@ td h2, h2.blue {font-family:Helvetica, Arial, Verdana; color:#1d6396}
 #errors li { color: #c00; }
 
 tr.odd{
-	    background-color: #f2f2f2;
+	    background-color: #6360ffd2;
 }
 
 tr.even{
-	    background-color: #fefefe;
+	    background-color: #495cc9bd;
 }

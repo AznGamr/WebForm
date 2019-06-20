@@ -34,37 +34,44 @@
 								
 								
 								
-			<h2>Workplace Support Form<img alt="Workplace Support Form" src="POST%20Form_files/temoji.jpg" width="110" height="60" style="vertical-align: middle;"></h2>
+			<h2 style="font-size:20px; color: #ffffff">Workplace Support Form</h2>
 			<table class="nwe-request">
-				<tbody><tr class="odd">
+				<tbody  style="font-size:25px; color: #ffffff"><tr class="odd">
 					<td><span class="redText">*</span> Which floor is the issue on?:</td>
 					<td><input id="neighborhood" name="neighborhood" type="text" value=""></td>
 				</tr>
 				<tr class="even">
-					<td><span class="redText">*</span> Which Desk/Room number is the issue at?:<br><span class="greyText">Desk numbers are located on the side of the desk.</span></td>
+					<td><span class="redText" >*</span> Which Desk/Room number is the issue at?:<br><span class="greyText">Desk numbers are located on the side of the desk.</span></td>
 					<td><input id="desk" name="desk" type="text" value=""></td>
 				</tr>
 				<tr class="odd">
 					<td><span class="redText">*</span> With what are you having trouble?
 						(Check the one most relevant):</td>
-					<td style="width: 250px !important;float: left;">
+					<td style="width: 250px !important;float: left;font-size:20px; color: #ffffff">
 						<span><input id="reportingValues11" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Conference Room"><label for="reportingValues11">Conference Room</label></span>
 						<span><br><input id="reportingValues12" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Monitor"><label for="reportingValues12">Monitor</label></span>
 						<span><br><input id="reportingValues13" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Internet"><label for="reportingValues13">Internet</label></span>
-						<span><br><input id="reportingValues14" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Phone/Headset"><label for="reportingValues14">Phone/Headset</label></span>
+						<span><br><input id="reportingValues14" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Desk Phone"><label for="reportingValues14">Desk Phone</label></span>
 						<span><br><input id="reportingValues15" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="iPhone/iPad"><label for="reportingValues15">iPhone/iPad</label></span>
 						<span><br><input id="reportingValues16" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Streamline Printer"><label for="reportingValues16">Streamline Printer</label></span>
 						<span><br><input id="reportingValues17" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Training Room Support Request"><label for="reportingValues17">Training Room Support Request</label></span>
 						<span><br><input id="reportingValues18" name="reportingValues1" class="cBox" onchange="showHideInternet(this);showHideDeskPhone(this);resetSelections(this);" type="checkbox" value="Other Tech"><label for="reportingValues18">Other Tech</label></span>
 						<input type="hidden" name="_reportingValues1" value="on">
-					</td>
+					
+<!-- 					<br/>Facilities Issue? <a href="https://gSAPapps.gene.com" target="_blank">Click here</a>		 -->
+							</td>
+<!--				<td style="width: 180px;float: left;"><br><br>
+				<span><input id="reportingValues21" name="reportingValues2" class="cBox" onchange="showHideInternet(this);resetSelections(this);" type="checkbox" value="iPhone/iPad"><label for="reportingValues21">iPhone/iPad</label></span><input type="hidden" name="_reportingValues2" value="on">
+-->					
+<!-- 					<br/>Facilities Issue? <a href="https://gSAPapps.gene.com" target="_blank">Click here</a>		 -->
+							
 				</tr>
 				
 				<tr class="odd" id="internetDetails" style="display: none;">
 					<td colspan="2">
 						<table class="nwe-request">
 
-	<tbody><tr class="even">
+	<tbody style="font-size:20px; color: #ffffff"><tr class="even">
 		<td>Are all the users affected or just you?:</td>
 		<td><input id="internet.affectedUser1" name="internet.affectedUser" type="radio" value="Just me"><label for="internet.affectedUser1">Just me</label> <br> <input id="internet.affectedUser2" name="internet.affectedUser" type="radio" value="Everyone"><label for="internet.affectedUser2">Everyone</label>
 	</td></tr>
@@ -91,17 +98,74 @@
 				<input id="internet.computerOther" name="internet.computerOther" onchange="checkComputerOthers(&#39;internet.computer&#39;)" type="text" value="">
 				</td>
 	</tr>
-
-	<tr class="odd">
-		<td> Please select or describe your issues below:<br><span class="greyText">Please choose all that may apply</span></td>
-		<td><span><input id="internet.issues1" name="internet.issues" type="checkbox" value="Connecting"><label for="internet.issues1">Connecting</label></span>
-			<span><br><input id="internet.issues2" name="internet.issues" type="checkbox" value="Staying connected"><label for="internet.issues2">Staying connected</label></span>
-			<span><br><input id="internet.issues3" name="internet.issues" type="checkbox" value="Calls Dropping"><label for="internet.issues3">Calls Dropping</label></span>
-			<span><br><input id="internet.issues4" name="internet.issues" type="checkbox" value="Other"><label for="internet.issues4">Other</label></span>
-			<input type="hidden" name="_internet.issues" value="on">
+<!--		<tr class="even">
+		<td>Are you experiencing issues continuously or during specific time ranges?:<br></td>
+		<td>
+			<input id="internet.howOften1" name="internet.howOften" type="radio" value="Countinuously"><label for="internet.howOften1">Countinuously</label> 
+			<br> 
+			<input id="internet.howOften2" name="internet.howOften" type="radio" value="Specific time ranges"><label for="internet.howOften2">Specific time ranges</label>
 		</td>
 	</tr>
+	<tr class="odd">
+		<td> What date did the problem start?:</td>
+		<td><input id="dateStart" name="internet.dateStart" type="date" value="" size="20">
+-->			
+<!-- 						<a -->
+<!-- 						href="javascript:show_calendar('nwe.dateStart', null,null,'mm/dd/yyyy');" -->
+<!-- 						name="showCalendar"> <img -->
 
+<!-- 							height="21" border=0> -->
+<!-- 					</a> -->
+<!--					</td>
+	</tr>
+			<tr class="even">
+		<td> What time did the problem start?:</td>
+		<td><input id="timeStart" name="internet.timeStart" type="text" value="" size="20" class="ui-timepicker-input" autocomplete="off">
+						</td>
+	</tr>
+	<tr class="odd">
+		<td> What date did the problem end?:</td>
+		<td><input id="dateEnd" name="internet.dateEnd" type="date" value="" size="10">
+-->
+<!-- 						<a -->
+<!-- 						href="javascript:show_calendar('nwe.dateEnd', null,null,'mm/dd/yyyy');" -->
+<!-- 						name="showCalendar"> <img -->
+
+<!-- 							height="20" border=0> -->
+<!-- 					</a>-->
+<!--</td> 
+	</tr>
+	<tr class="even">
+		<td> What time did the problem end?:</td>
+		<td><input id="timeEnd" name="internet.timeEnd" type="text" value="" size="10" class="ui-timepicker-input" autocomplete="off">
+					</td>
+	</tr>
+-->
+	<tr class="odd">
+		<td> Please select or describe your issues below:<br><span class="greyText">Please choose all that may apply</span></td>
+		<td><span><input id="internet.issues1" name="internet.issues" type="checkbox" value="Connecting"><label for="internet.issues1">Connecting</label></span><span><br><input id="internet.issues2" name="internet.issues" type="checkbox" value="Staying connected"><label for="internet.issues2">Staying connected</label></span><span><br><input id="internet.issues3" name="internet.issues" type="checkbox" value="Calls Dropping"><label for="internet.issues3">Calls Dropping</label></span><span><br><input id="internet.issues4" name="internet.issues" type="checkbox" value="Other"><label for="internet.issues4">Other</label></span><input type="hidden" name="_internet.issues" value="on"></td>
+	</tr>
+<!--	
+	<tr class="even">
+		<td>Are you having trouble with certain wifi SSID's:<br><span class="greyText">Please choose all that may apply</span></td>
+		<td><span><input id="internet.ssids1" name="internet.ssids" type="checkbox" value="All of them"><label for="internet.ssids1">All of them</label></span><span><br><input id="internet.ssids2" name="internet.ssids" type="checkbox" value="Campus;WLAN-001"><label for="internet.ssids2">Campus;WLAN-001</label></span><span><br><input id="internet.ssids3" name="internet.ssids" type="checkbox" value="Airway"><label for="internet.ssids3">Airway</label></span><span><br><input id="internet.ssids4" name="internet.ssids" type="checkbox" value="GenenAir2"><label for="internet.ssids4">GenenAir2</label></span><span><br><input id="internet.ssids5" name="internet.ssids" type="checkbox" value="GenenAir3"><label for="internet.ssids5">GenenAir3</label></span><span><br><input id="internet.ssids6" name="internet.ssids" type="checkbox" value="Guestwlan"><label for="internet.ssids6">Guestwlan</label></span><span><br><input id="internet.ssids7" name="internet.ssids" type="checkbox" value="Other"><label for="internet.ssids7">Other</label></span><input type="hidden" name="_internet.ssids" value="on">
+				<input id="internet.ssidOther" name="internet.ssidOther" onchange="checkComputerOthers(&#39;internet.ssids&#39;)" type="text" value=""></td>
+	</tr>
+-->	
+<!--	<tr class="odd">
+		<td><span class="redText">*</span> If you are able to connect, are you getting an IP address?:</td>
+		<td><input id="internet.hasIp1" name="internet.hasIp" styleclass="evenRadio" type="radio" value="Yes"><label for="internet.hasIp1">Yes</label> 
+			<br> 
+			<input id="internet.hasIp2" name="internet.hasIp" styleclass="evenRadio" type="radio" value="No"><label for="internet.hasIp2">No</label>
+			<br> 
+			<input id="internet.hasIp3" name="internet.hasIp" styleclass="oddRadio" type="radio" value="I do not know how to tell"><label for="internet.hasIp3">I don't know how to tell</label>
+				<br>
+				<span class="blueText infoText">If so, please provide all the IP INFO (ip address, default-gateway, mac-address and DNS) if you are able to obtain it:
+				</span>
+				<textarea id="internet.ip" name="internet.ip"></textarea>
+				</td>
+	</tr>
+-->	
 	<tr class="even">
 		<td><span class="redText"></span> Is there anything else you think we should know that would help?:</td>
 		<td><textarea id="internet.otherInfo" name="internet.otherInfo"></textarea></td>
@@ -114,16 +178,11 @@
 	<td colspan="2">
 		<table class="nwe-request">
 
-<tbody>
+<tbody  style="font-size:20px; color: #ffffff">
 
 <tr class="even">
-	<td> Please select or describe your issues below:<br><span class="greyText">Please choose all that may apply</span></td>
-	<td><span><input id="phone.issues1" name="phone.issues" type="checkbox" value="Hard Phone"><label for="phone.issues1">Hard Phone</label></span>
-		<span><br><input id="phone.issues2" name="phone.issues" type="checkbox" value="Jabber"><label for="phone.issues2">Jabber</label></span>
-		<span><br><input id="phone.issues3" name="phone.issues" type="checkbox" value="Finesse"><label for="phone.issues3">Finesse</label></span>
-		<span><br><input id="phone.issues4" name="phone.issues" type="checkbox" value="Jabra Headset"><label for="phone.issues4">Jabra Headset</label></span>
-		<input type="hidden" name="_phone.issues" value="on">
-	</td>
+<td> Please select or describe your issues below:<br><span class="greyText">Please choose all that may apply</span></td>
+<td><span><input id="phone.issues1" name="phone.issues" type="checkbox" value="Hard Phone"><label for="phone.issues1">Hard Phone</label></span><span><br><input id="phone.issues2" name="phone.issues" type="checkbox" value="Jabber"><label for="phone.issues2">Jabber</label></span><span><br><input id="phone.issues3" name="phone.issues" type="checkbox" value="Finesse"><label for="phone.issues3">Finesse</label></span><span><br><input id="phone.issues4" name="phone.issues" type="checkbox" value="Jabra Headset"><label for="phone.issues4">Jabra Headset</label></span><input type="hidden" name="_phone.issues" value="on"></td>
 </tr>
 
 
@@ -131,9 +190,9 @@
 </tbody></table>
 
 </td></tr><tr class="odd">
-	<td><span class="redText"></span> Additional comments about
+	<td style="font-size:20px; color: #ffffff"><span class="redText"></span> Additional comments about
 		problem:</td>
-	<td><textarea id="comments" name="comments"></textarea></td>
+	<td><textarea id="comments" name="comments" style="margin-right: -60px;" rows="5" cols="80"></textarea></td>
 </tr>
 
 <script type="text/javascript">
@@ -143,10 +202,10 @@
 					
 				
 			</tbody></table>
-			<div class="section">
+			<div class="section" style= "font-size:20px; color: #ffffff; background-color: #495cc9bd">
 
 
-							<table class="rwfRequest">
+							<table class="rwfRequest" style= "background-color: #495cc9bd">
 								
 								<tbody><tr>
 									<td valign="top" colspan="2">
@@ -163,9 +222,9 @@
 								
 							</tbody></table>
 						</div>
-			<div class="section" style="font-size:16px ;color: #ffffff; background-color: #ff0000">
-			- For Ergonomic issues, requests, or questions, please contact the Ergo team: 650-225-5055 or ergo-d@gene.com<br>
-			- To report Facilities issues, please contact Facilities Call Center: 650-225-1778<br>
+			<div class="section" style="font-size:20px ;color: #ffffff; background-color: #ff0000c7">
+			To report an Emergency please contact the First Alert Team: 650-225-1300<br>
+			To report Facilities issues that require immediate attention, contact Facilities Call Center: 650-225-1778<br>
 			</div>			
 		<div class="buttons" style="float: left; width: 100%;">
 			<input type="submit" name="continue" value="   Continue...   ">

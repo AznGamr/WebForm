@@ -10,7 +10,7 @@ function showHideInternet(obj){
 	}
 }
 function showHideDeskPhone(obj){
-	if(obj.checked==true&&obj.value=='Phone/Headset'){
+	if(obj.checked==true&&obj.value=='Desk Phone'){
 		$('#phoneDetails').show();
 		$('#internetDetails').hide();
 	}else if(obj.checked==true){
