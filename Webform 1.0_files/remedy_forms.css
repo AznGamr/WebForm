@@ -37,19 +37,19 @@
 }
 
 .close {
-	background: #606061;
+	background: #cc1b1b;
 	color: #FFFFFF;
-	line-height: 25px;
+	line-height: 50px;
 	position: absolute;
 	right: -12px;
 	text-align: center;
 	top: -10px;
-	width: 24px;
+	width: 50px;
 	text-decoration: none;
 	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
@@ -57,7 +57,23 @@
 
 .close:hover { background: #00d9ff; }
 
+.modal__bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+  }
+
 body {margin:0px; font-size:8pt;}
+
+.hero-image__title {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,'Trade Gothic',sans-serif;
+	margin-top: -.1em;
+	margin-bottom: -.1em;
+	font-size: 200%;
+}
 
 html { 
 	background: url(Background.JPG) no-repeat center center fixed; 
